@@ -21,7 +21,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.6
-    - large-image =={{ version }}
+    - large-image
     - libtiff >=0.4.1
     - pylibtiff >=0.4.1
     - tifftools
