@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - large-image
-    - libtiff >=0.4.1
+    - libtiff
     - pylibtiff >=0.4.1
     - tifftools
 
