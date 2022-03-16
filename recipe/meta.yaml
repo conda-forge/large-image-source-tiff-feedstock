@@ -10,7 +10,7 @@ source:
   sha256: 96db3c9e0f4a42ab1007da744c592079a318da120f5b89037d17ea6668003aa6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.6
     - large-image
-    - libtiff >=0.4.1
+    - libtiff
     - pylibtiff >=0.4.1
     - tifftools
 
