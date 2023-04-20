@@ -1,5 +1,5 @@
 {% set name = "large-image-source-tiff" %}
-{% set version = "1.20.3" %}
+{% set version = "1.20.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9970e901bec6ebfa3a234e8488ea0ee9ce368ceeea1201997b72ec3c59972ef
+  sha256: 58cc1202a788b7c33f006cb881112e47c458a377967d2b3e245a87095438a9aa
 
 build:
   number: 0
