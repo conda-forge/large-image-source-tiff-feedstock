@@ -10,17 +10,17 @@ source:
   sha256: 91c46824460187dd30458e17c3c8413475b5807450327e7f0cddd0f52669f974
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.6
+    - python >=3.8
     - large-image
     - libtiff
     - pylibtiff >=0.4.1
