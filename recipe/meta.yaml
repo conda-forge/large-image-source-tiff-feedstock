@@ -10,23 +10,25 @@ source:
   sha256: b2c95c696031db9d23fe7ed886746703436d3656071716b9b1e55d1ba7b66416
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools_scm
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - large-image
     - libtiff
     - pylibtiff >=0.4.1
     - tifftools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - large_image
     - large_image_source_tiff
