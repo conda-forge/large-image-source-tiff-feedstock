@@ -1,5 +1,5 @@
 {% set name = "large-image-source-tiff" %}
-{% set version = "1.35.6" %}
+{% set version = "1.35.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fc8caac9122bd575c4e8adb097f6468ce7127fdc3c758484c1144784fb417345
+  sha256: 412c1497af65cb1f68f8154bdda6263f685599f43f8ff49ba7a1d3aceb85421b
 
 build:
   number: 0
